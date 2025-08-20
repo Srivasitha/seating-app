@@ -1,0 +1,153 @@
+.layout-page-container {
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+}
+
+.layout-container {
+    max-width: 800px; /* A4-like ratio is better for tables */
+    margin: 0 auto 30px auto;
+    background: #ffffff;
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.layout-container.empty {
+    text-align: center;
+}
+
+.layout-header {
+    text-align: center;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}
+
+.layout-header h1 { margin: 0; color: #333; }
+.layout-header h2 { margin: 5px 0 0 0; color: #8e44ad; font-weight: 500; }
+
+.exam-details {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    color: #555;
+    font-size: 0.9rem;
+}
+
+/* --- NEW: Table Styles --- */
+.seating-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+}
+
+.seating-table th, .seating-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.seating-table thead th {
+    background-color: #f8f9fa;
+    color: #333;
+    font-weight: 600;
+    border-top: 1px solid #ddd;
+    border-bottom: 2px solid #ccc;
+}
+
+.seating-table tbody tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+.seating-table tbody tr:hover {
+    background-color: #f0eaf3; /* Light purple on hover */
+}
+
+/* Specific column styling */
+.seating-table td:first-child, .seating-table th:first-child {
+    text-align: center;
+    font-weight: 600;
+}
+
+
+/* --- Action Buttons --- */
+.action-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.download-btn {
+    background: linear-gradient(45deg, #8e44ad, #9b59b6);
+    color: white;
+    padding: 12px 30px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.download-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(142, 68, 173, 0.4);
+}
+
+.back-button {
+    background: none;
+    border: 1px solid #ddd;
+    color: #555;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.back-button:hover {
+    background: #f1f1f1;
+    border-color: #ccc;
+}
+/* --- NEW: Student Distribution Styles --- */
+.distribution-container {
+    padding: 15px;
+    background-color: #fafafa;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    border: 1px solid #eee;
+}
+
+.distribution-container h3 {
+    margin: 0 0 10px 0;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #555;
+}
+
+.distribution-pills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.dist-pill {
+    background-color: #e9ecef;
+    color: #495057;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.dist-pill strong {
+    color: #000;
+}

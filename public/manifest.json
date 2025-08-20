@@ -1,0 +1,23 @@
+{
+  "short_name": "Seating App",
+  "name": "School Seating Arrangement",
+  "icons": [
+    {
+      "src": "icons/logo192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icons/logo512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#8e44ad",
+  "background_color": "#f5f7fa",
+  "description": "An application to manage school exam seating arrangements."
+}

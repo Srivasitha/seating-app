@@ -1,0 +1,119 @@
+.layout-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.centered-message {
+    text-align: center;
+    padding-top: 10vh;
+}
+
+.layout-header {
+    text-align: center;
+    color: #333;
+    font-weight: 600;
+}
+
+.layout-subheader {
+    text-align: center;
+    color: #666;
+    margin-bottom: 40px;
+    font-size: 1.1rem;
+}
+
+.layout-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    margin-bottom: 40px;
+}
+
+.layout-card {
+    display: flex;
+    align-items: center;
+    background: #ffffff;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.07);
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.layout-card:hover, .layout-card:focus {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 35px rgba(142, 68, 173, 0.15);
+    border-color: #d8bde4;
+    outline: none;
+}
+
+.card-icon {
+    flex-shrink: 0;
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    background-color: #f0eaf3;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #8e44ad;
+}
+
+.card-icon svg {
+    width: 28px;
+    height: 28px;
+}
+
+.card-content {
+    flex-grow: 1;
+}
+
+.card-content h2 {
+    margin: 0 0 5px 0;
+    font-size: 1.25rem;
+    color: #333;
+}
+
+.card-content p {
+    margin: 0;
+    color: #777;
+    font-size: 0.9rem;
+}
+
+.card-arrow {
+    font-size: 1.5rem;
+    color: #cccccc;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.layout-card:hover .card-arrow {
+    transform: translateX(5px);
+    color: #8e44ad;
+}
+
+.back-button {
+    display: inline-block;
+    background-color: #f1f1f1;
+    color: #333;
+    border: 1px solid #ddd;
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: transform 0.2s, box-shadow 0.2s;
+    margin-top: 20px;
+}
+
+.back-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
